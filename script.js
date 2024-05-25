@@ -1,5 +1,10 @@
 function minDate(dates) {
   //write you code here
+	  const minDateString = dates.reduce((minDateStr, currentDateStr) => {
+  return currentDateStr < minDateStr ? currentDateStr : minDateStr;
+});
+
+return minDateString
 }
 
 // Do not change the code
